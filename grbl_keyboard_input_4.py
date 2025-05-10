@@ -4,7 +4,7 @@ import keyboard  # Library for capturing keyboard input
 import tkinter as tk  # GUI library
 
 # Replace 'COM11' with your serial port (e.g., '/dev/ttyUSB0' on Linux or 'COMx' on Windows)
-ser = serial.Serial('COM11', 115200)
+ser = serial.Serial('/dev/ttyUSB0', 115200)
 time.sleep(2)  # Wait for the connection to initialize
 
 def send_gcode_command(command):
